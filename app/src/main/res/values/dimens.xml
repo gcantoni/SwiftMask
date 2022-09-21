@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tfe_bottom_sheet_corner_radius">15dp</dimen>
+    <dimen name="tfe_bottom_sheet_top_padding">8dp</dimen>
+    <dimen name="bottom_sheet">24dp</dimen>
+
+    <dimen name="detection_margin">32dp</dimen>
+    <dimen name="card_round">24dp</dimen>
+
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_extra_small">4dp</dimen>
+    <dimen name="margin_medium">12dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+
+    <!-- Padding -->
+    <dimen name="card_padding">16dp</dimen>
+    <dimen name="detection_padding">24dp</dimen>
+
+    <!-- Toolbar -->
+    <dimen name="toolbar_expanded_height">216dp</dimen>
+    <dimen name="toolbar_scrim_visible_height">174dp</dimen>
+    <dimen name="toolbar_expanded_title_margin">24dp</dimen>
+</resources>

@@ -1,0 +1,375 @@
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/colorMaterialCard"
+        app:cardCornerRadius="@dimen/card_round"
+        android:layout_marginStart="@dimen/margin_large"
+        android:layout_marginEnd="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_small">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/margin_small"
+            android:paddingBottom="@dimen/margin_large"
+            android:paddingEnd="@dimen/margin_large"
+            android:paddingStart="@dimen/margin_small">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_small"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/item_action_handle0"
+                app:layout_constraintBottom_toBottomOf="@id/item_action_handle0"
+                android:src="@drawable/ic_register"
+                android:id="@+id/random"/>
+
+            <TextView
+                android:id="@+id/leave_review_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_small"
+                android:ellipsize="end"
+                android:fontFamily="@font/manrope"
+                android:maxLines="2"
+                android:textSize="16sp"
+                android:text="@string/register_title"
+                android:textColor="?android:textColorPrimary"
+                app:layout_constraintBottom_toBottomOf="@id/item_action_handle0"
+                app:layout_constraintEnd_toStartOf="@id/item_action_handle0"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toEndOf="@+id/random"
+                app:layout_constraintTop_toTopOf="@id/item_action_handle0" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/item_action_handle0"
+                android:src="@drawable/ic_register"
+                android:visibility="invisible"
+                app:showText="false"
+                android:paddingTop="@dimen/margin_medium"
+                android:paddingBottom="@dimen/margin_medium"
+                android:layout_marginStart="@dimen/margin_large"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/item_action_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/register_subtitle"
+                android:paddingEnd="@dimen/margin_small"
+                android:paddingStart="@dimen/margin_small"
+                android:textSize="14sp"
+                android:fontFamily="@font/manrope"
+                app:layout_constraintTop_toBottomOf="@id/item_action_handle0"
+                tools:layout_editor_absoluteX="16dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <Space
+        android:id="@+id/spaceForCard"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="@dimen/card_padding"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/colorMaterialCard"
+        app:cardCornerRadius="@dimen/card_round"
+        android:layout_marginStart="@dimen/margin_large"
+        android:layout_marginEnd="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_small">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/margin_small"
+            android:paddingBottom="@dimen/margin_large"
+            android:paddingEnd="@dimen/margin_large"
+            android:paddingStart="@dimen/margin_small">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_small"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/switch_options"
+                app:layout_constraintBottom_toBottomOf="@id/switch_options"
+                android:src="@drawable/ic_options"
+                android:id="@+id/options"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_small"
+                android:ellipsize="end"
+                android:fontFamily="@font/manrope"
+                android:maxLines="2"
+                android:textSize="16sp"
+                android:text="@string/options_title"
+                android:textColor="?android:textColorPrimary"
+                app:layout_constraintBottom_toBottomOf="@id/switch_options"
+                app:layout_constraintEnd_toStartOf="@id/switch_options"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toEndOf="@+id/options"
+                app:layout_constraintTop_toTopOf="@id/switch_options" />
+
+            <Switch
+                android:id="@+id/switch_options"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/white"
+                android:textIsSelectable="false"
+                android:visibility="visible"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:track="@drawable/switch_track"
+                android:thumb="@drawable/switch_thumb"
+                android:paddingTop="@dimen/margin_medium"
+                android:paddingBottom="@dimen/margin_medium"
+                android:layout_marginStart="@dimen/margin_large"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_register"
+                android:visibility="invisible"
+                app:showText="false"
+                android:paddingTop="@dimen/margin_medium"
+                android:paddingBottom="@dimen/margin_medium"
+                android:layout_marginStart="@dimen/margin_large"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/item_action_description1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/options_subtitle"
+                android:paddingEnd="@dimen/margin_small"
+                android:paddingStart="@dimen/margin_small"
+                android:textSize="14sp"
+                android:fontFamily="@font/manrope"
+                app:layout_constraintTop_toBottomOf="@id/switch_options"
+                tools:layout_editor_absoluteX="16dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <Space
+        android:id="@+id/spaceForCard2"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="@dimen/card_padding"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardSecurity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/colorMaterialCard"
+        app:cardCornerRadius="@dimen/card_round"
+        app:cardElevation="0dp"
+        android:layout_marginStart="@dimen/margin_large"
+        android:layout_marginEnd="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_small">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/margin_small"
+            android:paddingBottom="@dimen/margin_large"
+            android:paddingEnd="@dimen/margin_large"
+            android:paddingStart="@dimen/margin_small">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_small"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/security_switch"
+                app:layout_constraintBottom_toBottomOf="@id/security_switch"
+                android:src="@drawable/ic_security"
+                android:id="@+id/security"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_small"
+                android:ellipsize="end"
+                android:fontFamily="@font/manrope"
+                android:maxLines="2"
+                android:textSize="16sp"
+                android:text="@string/security_title"
+                android:textColor="?android:textColorPrimary"
+                app:layout_constraintBottom_toBottomOf="@id/security_switch"
+                app:layout_constraintEnd_toStartOf="@id/security_switch"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toEndOf="@+id/security"
+                app:layout_constraintTop_toTopOf="@id/security_switch" />
+
+            <Switch
+                android:id="@+id/security_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/white"
+                android:textIsSelectable="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:track="@drawable/switch_track"
+                android:thumb="@drawable/switch_thumb"
+                android:paddingTop="@dimen/margin_medium"
+                android:paddingBottom="@dimen/margin_medium"
+                android:layout_marginStart="@dimen/margin_large"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_register"
+                android:visibility="invisible"
+                app:showText="false"
+                android:paddingTop="@dimen/margin_medium"
+                android:paddingBottom="@dimen/margin_medium"
+                android:layout_marginStart="@dimen/margin_large"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/item_action_description2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/security_subtitle"
+                android:paddingEnd="@dimen/margin_small"
+                android:paddingStart="@dimen/margin_small"
+                android:textSize="14sp"
+                android:fontFamily="@font/manrope"
+                app:layout_constraintTop_toBottomOf="@id/security_switch"
+                tools:layout_editor_absoluteX="16dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <Space
+        android:id="@+id/spaceForCard3"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="@dimen/card_padding"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/colorMaterialCard"
+        app:cardCornerRadius="@dimen/card_round"
+        android:layout_marginStart="@dimen/margin_large"
+        android:layout_marginEnd="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_small">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/margin_small"
+            android:paddingBottom="@dimen/margin_large"
+            android:paddingEnd="@dimen/margin_large"
+            android:paddingStart="@dimen/margin_small">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_small"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/item_action_handle3"
+                app:layout_constraintBottom_toBottomOf="@id/item_action_handle3"
+                android:src="@drawable/ic_about_alt"
+                android:id="@+id/about"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_small"
+                android:ellipsize="end"
+                android:fontFamily="@font/manrope"
+                android:maxLines="2"
+                android:textSize="16sp"
+                android:text="@string/about_title"
+                android:textColor="?android:textColorPrimary"
+                app:layout_constraintBottom_toBottomOf="@id/item_action_handle3"
+                app:layout_constraintEnd_toStartOf="@id/item_action_handle3"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toEndOf="@+id/about"
+                app:layout_constraintTop_toTopOf="@id/item_action_handle3" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/item_action_handle3"
+                android:src="@drawable/ic_register"
+                android:visibility="invisible"
+                app:showText="false"
+                android:paddingTop="@dimen/margin_medium"
+                android:paddingBottom="@dimen/margin_medium"
+                android:layout_marginStart="@dimen/margin_large"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/item_action_description3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_extra_small"
+                android:text="@string/about_subtitle"
+                android:paddingEnd="@dimen/margin_small"
+                android:paddingStart="@dimen/margin_small"
+                android:textSize="14sp"
+                android:fontFamily="@font/manrope"
+                app:layout_constraintTop_toBottomOf="@id/item_action_handle3"
+                tools:layout_editor_absoluteX="16dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <Space
+        android:id="@+id/spaceForCard4"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+</LinearLayout>

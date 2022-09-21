@@ -1,0 +1,17 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid
+                android:color="@color/colorIconBg" />
+            <size
+                android:width="30dp"
+                android:height="30dp" />
+        </shape>
+    </item>
+    <item
+        android:width="18dp"
+        android:height="18dp"
+        android:start="6dp"
+        android:top="6dp"
+        android:drawable="@drawable/ic_about" />
+</layer-list>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tfe_semi_transparent">#66000000</color>
+
+    <color name="colorPrimary">#F2F0F4</color>
+    <color name="colorPrimaryDark">#F2F0F4</color>
+    <color name="colorPrimarySurface">#E3E1E6</color>
+    <color name="colorAccent">#005AC3</color>
+
+    <color name="colorMaterialCard">#FBF8FD</color>
+    <color name="colorCardOutlined">#DADCE0</color>
+
+    <color name="colorButtonSwipe">#C2C1C1</color>
+
+    <color name="colorIcon">#7F7E83</color>
+    <color name="colorIconBg">#EBEAEA</color>
+
+    <color name="bottomSheetBgColor">#E6ffffff</color>
+
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorTextSecondary">#757575</color>
+    <color name="colorTextBottom">#FFF</color>
+
+    <color name="colorCircle0">#1A6CD9</color>
+    <color name="colorCircle1">#D91A4A</color>
+    <color name="colorCircle2">#D9521A</color>
+    <color name="colorCircle4">#D9BA1A</color>
+    <color name="colorCircle5">#6F86DA</color>
+    <color name="colorCircle6">#F28B82</color>
+
+    <color name="colorCircle7">#6F86DA</color>
+    <color name="colorCircle8">#0B9D58</color>
+    <color name="colorCircle9">#9E9E9E</color>
+
+    <color name="maskNotSureDetected">@color/colorAccent</color>
+    <color name="maskNotDetected">#F44336</color>
+    <color name="maskDetected">#8BC34A</color>
+
+    <color name="colorSwitchBgOff">#5C5E66</color>
+    <color name="colorSwitchBgOn">@color/colorAccent</color>
+    <color name="colorSwitchThumbOff">#E0E2EC</color>
+    <color name="colorSwitchThumbOn">#D6E2FF</color>
+</resources>

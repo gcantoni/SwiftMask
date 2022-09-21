@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="6dp"/>
+
+    <View
+        android:id="@+id/smallButtonRect"
+        android:layout_width="24dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_bottom_line"/>
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="14dp"/>
+
+    <!-- navigation header layout -->
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:paddingBottom="0dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:text="@string/before_starting"
+            android:fontFamily="@font/manrope"
+            android:textColor="@color/colorTextPrimary" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="@dimen/margin_small"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:layout_marginBottom="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorTextSecondary"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:text="@string/before_starting_instructions"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+                <LinearLayout
+                    android:id="@+id/pro_walls"
+                    style="@style/about_entry"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+
+                    <ImageView
+                        android:src="@drawable/ic_height"
+                        style="@style/icon" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/about_title_text"
+                            android:fontFamily="@font/manrope"
+                            android:text="@string/before_starting_height_title"
+                            android:textColor="@color/colorTextPrimary" />
+
+                        <TextView
+                            style="@style/about_subtitle_text"
+                            android:text="@string/before_starting_height_subtitle"
+                            android:textColor="@color/colorTextSecondary" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/about_donate"
+                    style="@style/about_entry"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+
+                    <ImageView
+                        android:src="@drawable/ic_battery"
+                        style="@style/icon" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/about_title_text"
+                            android:fontFamily="@font/manrope"
+                            android:text="@string/before_starting_battery_title"
+                            android:textColor="@color/colorTextPrimary" />
+
+                        <TextView
+                            style="@style/about_subtitle_text"
+                            android:text="@string/before_starting_battery_subtitle"
+                            android:textColor="@color/colorTextSecondary" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pro_drive"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    style="@style/about_entry">
+
+                    <ImageView
+                        android:src="@drawable/ic_camera_start"
+                        style="@style/icon" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/about_title_text"
+                            android:fontFamily="@font/manrope"
+                            android:text="@string/before_starting_camera_title"
+                            android:textColor="@color/colorTextPrimary" />
+
+                        <TextView
+                            style="@style/about_subtitle_text"
+                            android:text="@string/before_starting_camera_subtitle"
+                            android:textColor="@color/colorTextSecondary" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</LinearLayout>

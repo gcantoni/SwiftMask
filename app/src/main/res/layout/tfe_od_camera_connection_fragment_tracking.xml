@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/myScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/toolbar_expanded_height"
+        android:paddingStart="@dimen/card_padding"
+        android:paddingEnd="@dimen/card_padding">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardViewDetection"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:strokeColor="@color/colorCardOutlined"
+            app:strokeWidth="1dp"
+            app:cardUseCompatPadding="true"
+            app:cardBackgroundColor="@color/colorMaterialCard"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="@dimen/card_round">
+
+            <it.gcantoni.swiftmask.ui.views.AutoFitTextureView
+                android:id="@+id/texture"
+                android:layout_width="match_parent"
+                android:layout_height="500dp" />
+
+            <it.gcantoni.swiftmask.ui.views.OverlayView
+                android:id="@+id/tracking_overlay"
+                android:layout_width="match_parent"
+                android:layout_height="445dp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/card_padding"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/margin_large"
+                android:paddingRight="@dimen/margin_large"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_categories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:fontFamily="@font/manrope"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="18sp"
+                    android:text="@string/quick_tools"
+                    android:layout_alignParentStart="true"/>
+
+            </RelativeLayout>
+
+            <include layout="@layout/content_quick_actions" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="2.5dp"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

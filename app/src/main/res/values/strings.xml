@@ -1,0 +1,39 @@
+<resources>
+    <string name="tfe_od_app_name">Swift Mask</string>
+    <string name="app_name">Swift Mask</string>
+    <string name="tfe_od_camera_error">This device doesn\'t support Camera2 API</string>
+
+    <string name="before_starting">Before starting…</string>
+    <string name="before_starting_instructions">Make sure you set up your location as follows</string>
+    <string name="before_starting_height_title">Ideal height</string>
+    <string name="before_starting_height_subtitle">Place the device you will be using about 1.5 meters above the ground</string>
+    <string name="before_starting_battery_title">Charge your device</string>
+    <string name="before_starting_battery_subtitle">It is strongly recommended if the application is used for whole days and not for short moments</string>
+    <string name="before_starting_camera_title">Allow to use the camera</string>
+    <string name="before_starting_camera_subtitle">The scan for the detection of the person requires, for obvious reasons, the permission to be able to use the camera</string>
+    <string name="before_starting_allow_permission">Allow permission</string>
+
+    <string name="quick_tools">Quick tools</string>
+    <string name="register_title">Register</string>
+    <string name="register_subtitle">Users who will undergo the scan will be saved here, so you can know whether or not they wore the mask at the entrance</string>
+    <string name="options_title">Options</string>
+    <string name="options_subtitle">Show a number of additional options such as number of frames, the crop, the inference time and manage the numbers of threads</string>
+    <string name="security_title">Security</string>
+    <string name="security_subtitle">When a person without a mask is detected, an alarm sound will inform of their presence. Likewise, when a person wearing a mask is detected, a soothing sound will inform their presence</string>
+    <string name="about_title">About</string>
+    <string name="about_subtitle">Designed and developed by Giorgio Cantoni</string>
+
+    <string name="no_mask_detected">no mask</string>
+    <string name="mask_detected">mask</string>
+
+    <string name="bottom_sheet_mask_detected_title">Mask detected</string>
+    <string name="bottom_sheet_mask_detected_subtitle">You can go!</string>
+
+    <string name="bottom_sheet_mask_not_detected_title">Mask not detected</string>
+    <string name="bottom_sheet_mask_not_detected_subtitle">Please wear your mask!</string>
+
+    <string name="switch_camera">Switch Camera</string>
+    <string name="frontal_camera">Frontal</string>
+    <string name="rear_camera">Rear</string>
+
+</resources>

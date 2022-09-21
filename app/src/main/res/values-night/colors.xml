@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1B1B1D</color>
+    <color name="colorPrimaryDark">#1B1B1D</color>
+    <color name="colorPrimarySurface">#46464A</color>
+    <color name="colorTextPrimary">#FFF</color>
+    <color name="colorTextSecondary">#BDBDBD</color>
+    <color name="colorMaterialCard">#303033</color>
+    <color name="colorAccent">#D6E2FF</color>
+
+    <color name="colorIcon">#A5A6AD</color>
+    <color name="colorIconBg">#424446</color>
+
+    <color name="colorCardOutlined">#5F6368</color>
+
+    <color name="colorTextBottom">#FFF</color>
+
+    <color name="bottomSheetBgColor">#1B1B1D</color>
+    <color name="colorButtonSwipe">#6A6C6F</color>
+
+    <color name="colorSwitchBgOff">#46464A</color>
+    <color name="colorSwitchBgOn">#3F4758</color>
+    <color name="colorSwitchThumbOff">#A9AAB4</color>
+    <color name="colorSwitchThumbOn">@color/colorAccent</color>
+
+    <color name="colorCircle0">#1A6CD9</color>
+    <color name="colorCircle1">#D91A4A</color>
+    <color name="colorCircle2">#D9521A</color>
+    <color name="colorCircle4">#D9BA1A</color>
+    <color name="colorCircle5">#6F86DA</color>
+    <color name="colorCircle6">#F28B82</color>
+
+    <color name="colorCircle7">#6F86DA</color>
+    <color name="colorCircle8">#0B9D58</color>
+    <color name="colorCircle9">#9E9E9E</color>
+
+    <color name="maskNotSureDetected">@color/colorAccent</color>
+    <color name="maskNotDetected">#F44336</color>
+    <color name="maskDetected">#8BC34A</color>
+
+</resources>
