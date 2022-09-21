@@ -6,7 +6,7 @@
 Swift Mask scans images or human faces in real time and detects whether the mask is worn or not, with the ability to set an audible alert.
 
 ## Building
-To correctly compile the project it is necessary to have a  <a href="https://www.tensorflow.org/lite/guide">TensorFlow Lite model</a> (.tflite) containing the dataset of people wearing or not wearing a mask. It should be placed under /assets with the name of <i>mask_detector</i>
+To correctly compile the project it is necessary to have a  <a href="https://www.tensorflow.org/lite/guide">TensorFlow Lite model</a> (.tflite) containing the dataset of people wearing or not wearing a mask. It should be placed under <a href="https://github.com/gcantoni/SwiftMask/tree/main/app/src/main/assets">/assets</a> with the name of <i>mask_detector</i> 
 
 ## Screenshots
 <h3 align="center"><img src="https://raw.githubusercontent.com/gcantoni/swiftWallWallpapers/master/swift_mask_ss.png"/></h3>
