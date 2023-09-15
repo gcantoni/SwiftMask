@@ -11,8 +11,5 @@ To correctly compile the project it is necessary to have a  <a href="https://www
 ## Screenshots
 <h3 align="center"><img src="https://raw.githubusercontent.com/gcantoni/swiftWallWallpapers/master/swift_mask_ss.png"/></h3>
 
-## Download
-[<img src="https://github.com/gcantoni/pixeltheme/blob/master/github.png" alt="Download APK from GitHub" height="60">](https://github.com/gcantoni/swiftMask/releases)
-
 ## Credits
 This application is based on the <a href="https://www.tensorflow.org/lite/examples/image_classification/overview">Image classification</a> example by TensorFlow. This application adds the <a href="https://developers.google.com/ml-kit">MLKit</a> to implement face detection and a <a href="https://material.io/blog/announcing-material-you">Material You</a> based user interface.
